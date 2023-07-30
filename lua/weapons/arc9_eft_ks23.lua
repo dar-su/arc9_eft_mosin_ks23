@@ -158,15 +158,20 @@ SWEP.HeatLockout = false
 
 --          Firemodes
 
-SWEP.RPM = 300
+SWEP.RPM = 999
 
 SWEP.SuppressEmptySuffix = false 
 SWEP.NoFiremodeWhenEmpty = true 
 
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = "Pump-action", ManualAction = true, SuppressEmptySuffix = true, NoShellEject = true, RPM = 999, SlamFire = true },
+    { Mode = 1, PrintName = "Pump-action" },
 }
 
+SWEP.SlamFire = true
+SWEP.SuppressEmptySuffix = true
+SWEP.ManualAction = true
+SWEP.NoShellEject = true
+SWEP.EjectDelay = 0.3
 --          Speed
 
 SWEP.AimDownSightsTime = 0.33
@@ -280,8 +285,6 @@ SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/patron_12x70_shell.mdl"
 SWEP.ShellScale = 1
 SWEP.ShellCorrectAng = Angle(0, 180, 180)
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
-
-SWEP.EjectDelay = 0.05
 
 -- SWEP.BulletBones = {
 --     [1] = "bullet001",
@@ -448,9 +451,9 @@ SWEP.Animations = {
     ["idle"] = { Source = "idle", Time = 1111 }, -- remove TIME !!!!!!
 
     ["ready"] = { Source = {"ready0","ready1","ready2"}, EventTable = {
-        { s = randspin, t = 0 },
-        { s = path .. "ks23_pump_in.ogg", t = 0.55 },
-        { s = path .. "ks23_pump_out.ogg", t = 0.87 },
+        { s = path .. "mr133_draw.ogg", t = 0 },
+        { s = path .. "ks23_pump_in.ogg", t = 0.48 },
+        { s = path .. "ks23_pump_out.ogg", t = 0.75 },
         { s = randspin, t = 1.22 },
     } },
 
@@ -471,8 +474,8 @@ SWEP.Animations = {
     ["look"] = { Source = "look", MinProgress = 0.95, FireASAP = true, EventTable = look },
     ["look_empty"] = { Source = "look_empty", MinProgress = 0.95, FireASAP = true, EventTable = look },
 
-    ["mag_check"] = { Source = "magcheck", MinProgress = 0.95, FireASAP = true, EventTable = magcheck },
-    ["mag_check_empty"] = { Source = "magcheck_empty", MinProgress = 0.95, FireASAP = true, EventTable = magcheck },
+    ["magcheck"] = { Source = "magcheck", MinProgress = 0.95, FireASAP = true, EventTable = magcheck },
+    ["magcheck_empty"] = { Source = "magcheck_empty", MinProgress = 0.95, FireASAP = true, EventTable = magcheck },
 
     ["checkchamber"] = { Source = "checkchamber", MinProgress = 0.95, FireASAP = true, EventTable = checkchamber },
     ["checkchamber_empty"] = { Source = "checkchamber_empty", MinProgress = 0.95, FireASAP = true, EventTable = checkchamber },
@@ -481,13 +484,13 @@ SWEP.Animations = {
     ["switchsights"] = {  Source = "mod_switch", EventTable = switchi },
 
     
-    ["reload_start_empty"] = { Source = {"reload_start_empty0", "reload_start_empty1", "reload_start_empty2", "pa_ammo_in_first_2"}, RestoreAmmo = 1, EventTable = { 
+    ["reload_start_empty"] = { Source = {"reload_start_empty0", "reload_start_empty1", "reload_start_empty2"}, RestoreAmmo = 1, EventTable = { 
         { s = path .. "ks23_pump_in.ogg", t = 0.25 },
         { s = randspin, t = 0.55 },
         { s = path .. "mr133_shell_pickup.ogg", t = 0.84 },
         { s = path .. "mr133_shell_in_port.ogg", t = 1.25 },
         { s = randspin, t = 1.68 },
-        { s = path .. "ks23_pump_out.ogg", t = 1.83 },
+        { s = path .. "ks23_pump_out.ogg", t = 1.75 },
         { s = randspin, t = 2.05 },
     }},
 
@@ -500,12 +503,12 @@ SWEP.Animations = {
     ["reload_loop"] = { Source = "reload_loop", EventTable = {
         { s = path .. "mr133_shell_pickup.ogg", t = 0.05 },
         { s = path .. "mr133_magcover.ogg", t = 0.46 },
-        { s = shell_in, t = 0.6 },
+        { s = shell_in, t = 0.52 },
     }},
     ["reload_loop2"] = { Source = "reload_loop2", EventTable = {
         { s = path .. "mr133_shell_pickup.ogg", t = 0.26 },
         { s = path .. "mr133_magcover.ogg", t = 0.69 },
-        { s = shell_in, t = 0.8 },
+        { s = shell_in, t = 0.7 },
         { s = randspin, t = 0.97 },
     }},
     ["reload_end"] = { Source = "reload_end", EventTable = {
@@ -526,7 +529,7 @@ SWEP.Animations = {
             { s = path .. "ks23_jam_slidelock_try2.ogg", t = 1.41 },
             { s = path .. "ks23_jam_extract.ogg", t = 1.67 },
             { s = randspin, t = 1.93 },
-            { s = path .. "ks23_pump_out.ogg", t = 2.37 },
+            { s = path .. "ks23_pump_out.ogg", t = 2.2 },
             { s = randspin, t = 2.58 },
         },
     },
@@ -562,7 +565,7 @@ SWEP.Animations = {
             { s = path .. "ks23_pump_in.ogg", t = 3.7 },
             { s = path .. "ks23_jam_extract.ogg", t = 3.85 },
             { s = randspin, t = 4 },
-            { s = path .. "ks23_pump_out.ogg", t = 4.08 },
+            { s = path .. "ks23_pump_out.ogg", t = 3.92 },
             { s = randspin, t = 4.34 },
         },
         EjectAt = 3.85
@@ -580,7 +583,7 @@ SWEP.Animations = {
             { s = path .. "ks23_pump_in.ogg", t = 2.44 },
             { s = path .. "ks23_jam_extract.ogg", t = 2.5 },
             { s = randspin, t = 2.69 },
-            { s = path .. "ks23_pump_out.ogg", t = 3.04 },
+            { s = path .. "ks23_pump_out.ogg", t = 2.95 },
             { s = randspin, t = 3.25 },
         },
         EjectAt = 2.5

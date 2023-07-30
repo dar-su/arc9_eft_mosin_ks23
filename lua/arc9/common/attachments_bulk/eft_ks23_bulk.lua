@@ -16,7 +16,9 @@ ATT.EFTErgoAdd = -4
 ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
-ATT.Spread = 25.78 * ARC9.MOAToAcc
+ATT.SpreadOverride = 25.78 * ARC9.MOAToAcc
+
+ATT.MuzzleEffectQCA = 4
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -40,7 +42,7 @@ ATT.EFTErgoAdd = -10
 ATT.CustomCons = { Ergonomics = "-10" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
-ATT.Spread = 15.47 * ARC9.MOAToAcc
+ATT.SpreadOverride = 15.47 * ARC9.MOAToAcc
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
