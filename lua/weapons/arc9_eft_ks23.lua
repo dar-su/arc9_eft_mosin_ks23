@@ -11,11 +11,11 @@ SWEP.Credits = {
     [ARC9:GetPhrase("eft_trivia_arc9") .. "4"] = "Arctic",
 }
 
-SWEP.PrintName = "TOZ KS-23M"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ks23")
 
 SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pumpsg")
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = "Tula Arms Plant",
+    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_tula"),
     [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "23x75mmR",
     [ARC9:GetPhrase("eft_trivia_act") .. "3"]= "Pump",
     [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_ru"),
@@ -24,10 +24,10 @@ SWEP.Trivia = {
 
 SWEP.Description = [[KS-23 is a Russian shotgun, although because it uses a rifled barrel it is officially designated by the Russian military as a carbine. KS stands for Karabin Spetsialniy, "Special Carbine". It is renowned for its large caliber, firing a 23 mm round, equating to 6.27 gauge using the British and American standards of shotgun gauges and approximately 4 gauge using the current European standards (based on the metric CIP tables), making it the largest-bore shotgun in use today.]]
 
--- SWEP.StandardPresets = {
---     "[308 Conversion]XQAAAQDgAgAAAAAAAAA9iIIiM7tuo1AtT00OeFDsVy0QjzPJ+n72/CiKtDlryAX9+6/kqhA7Hr1E/2D9Iz6rN8zTUCuQ+5Sp9lQY7qxUfunqrzbaeslGLj1cfug0NTlmGh3gA+wVZQA19whbS40jfVlj6uqIKtm8FZlaaIpJNHmek0HjPG94drKMnm1eLKJZln1zdAss1Q90n0VytUc4mj3lf8lEE2semdym9+SxGjHM01bSaBF/wcnHHwiusLCFbaQpe/jslG+Y7ojSHZTNEFqsqYb7KccG04jc/+gn2C2szNw="
--- }
-    
+SWEP.StandardPresets = {
+    "[Drozd]XQAAAQADAQAAAAAAAAA9iIIiM7tuo1AtT00OeFD1ifVGUR5xJu/1fvpx2mF9ZQhIXeH+xrCGuMbuAqMRaO97i90yU2Jd3SU5GVdfvsAK7A0yp67hRYQQh7LcJNsPXmCXQhDtn3UuQOGTAFmnVfnynMetWqzy1yHEzSeSLCP2AUoH+p0OyYEwumf5QEcXxwA="
+}
+
 SWEP.Slot = 3
 SWEP.WorldModel = "models/weapons/w_shot_m3super90.mdl"
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_ks23.mdl"
@@ -234,8 +234,8 @@ SWEP.IronSights = {
 SWEP.ActivePos = Vector(-0.5, -3.2, -0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.SprintAng = Angle(50, 10, -45)
-SWEP.SprintPos = Vector(4, -5, 0)
+SWEP.SprintAng = Angle(50, -10, -25)
+SWEP.SprintPos = Vector(7, -2, 0)
 
 SWEP.NearWallAng = Angle(0, 55, 0)
 SWEP.NearWallPos = Vector(0, 0, -15)
