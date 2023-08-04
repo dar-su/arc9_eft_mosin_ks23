@@ -984,7 +984,7 @@ ATT.Attachments = {
     {
         PrintName = "Muzzle",
         Category = "eft_akm_muzzle",
-        Pos = Vector(-3.3, 0, 0),
+        Pos = Vector(-1.175, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
         Ang = Angle(0, 0, 0),
     },
@@ -1043,7 +1043,7 @@ ATT.Attachments = {
     {
         PrintName = "Muzzle",
         Category = "eft_akm_muzzle",
-        Pos = Vector(-0.35, 0, 0),
+        Pos = Vector(-0.28, 0, 0),
         Icon_Offset = Vector(1, 0, 0),
         Ang = Angle(0, 0, 0),
     },
