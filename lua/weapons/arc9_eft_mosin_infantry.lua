@@ -1083,3 +1083,8 @@ SWEP.AimDownSightsTimeMultShooting = 4
 
 SWEP.RicochetSounds = ARC9EFT.RicochetSounds
 SWEP.ShellSounds = ARC9EFT.ShellsHeavy
+
+SWEP.ShellModelHook = function(swep, old) 
+    if swep:GetReloading() and swep:Clip1() > 0 then return "models/weapons/arc9/darsu_eft/shells/762x54r_real.mdl" end
+    return old
+end
