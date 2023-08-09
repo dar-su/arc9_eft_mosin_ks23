@@ -391,7 +391,7 @@ ATT = {}
 ATT.PrintName = "Mosin Rifle Arbalet Patriot K+W rail mount"
 ATT.CompactName = "Patriot K+W"
 ATT.Icon = Material("entities/eft_mosin_attachments/pkw.png", "mips smooth")
-ATT.Description = [[Regular rings for the PU 3.5x scope, installed on the Kochetov mount.]]
+ATT.Description = [[The Patriot K+W rail mount for Mosin rifle, manufactured by Arbalet.]]
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

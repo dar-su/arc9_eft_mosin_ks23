@@ -102,7 +102,7 @@ ATT = {}
 ATT.PrintName = "KS-23M pistol grip"
 ATT.CompactName = "KS23M"
 ATT.Icon = Material("entities/eft_ks23_attachments/pg.png", "mips smooth")
-ATT.Description = [[An adjustable stock for M3 S90 shotguns, manufactured by Benelli.]]
+ATT.Description = [[A polymer pistol grip for the KS-23M shotgun, manufactured by TOZ.]]
 
 ATT.HasGrip = true 
 
@@ -132,7 +132,7 @@ ATT = {}
 ATT.PrintName = "KS-23M wire stock"
 ATT.CompactName = "KS23M steel"
 ATT.Icon = Material("entities/eft_ks23_attachments/st.png", "mips smooth")
-ATT.Description = [[A special pistol grip for M3 telescopic stocks manufactured by Benelli.]]
+ATT.Description = [[A steel wired stock for the KS-23M shotgun, manufactured by TOZ..]]
 
 ATT.EFTErgoAdd = 11
 ATT.CustomPros = { Ergonomics = "+11" }
