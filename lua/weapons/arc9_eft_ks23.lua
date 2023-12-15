@@ -108,6 +108,9 @@ SWEP.VisualRecoilPositionBumpUp = -0.00
 SWEP.VisualRecoilPositionBumpUpRTScope = 0.00
 SWEP.VisualRecoilPositionBumpUpHipFire = 0.02
 
+-- There's a bug with the new visual recoil fixes.
+SWEP.VisualRecoilEmergency = 1.5
+
 
 -- SWEP.VisualRecoilThinkFunc = function(springconstant, VisualRecoilSpringMagnitude, PUNCH_DAMPING, recamount)
 --     if recamount > 2 then
