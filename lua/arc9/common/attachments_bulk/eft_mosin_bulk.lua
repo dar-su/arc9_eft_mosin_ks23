@@ -970,7 +970,7 @@ ATT = {}
 
 ATT.PrintName = "Mosin Rifle Kiba Arms 7.62x54R custom thread adapter"
 ATT.CompactName = "Mosin thr."
-ATT.Icon = Material("entities/eft_mosin_attachments/wm.png", "mips smooth")
+ATT.Icon = Material("entities/eft_mosin_attachments/kiba.png", "mips smooth")
 ATT.Description = [[A muzzle brake for the Mosin rifle, manufactured by Witt Machine.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
