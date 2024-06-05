@@ -21,14 +21,8 @@ SWEP.StandardPresets = {
 
 SWEP.DefaultElements = {"sniperfuckingmosin"} -- side mount slot and different reciver
 
-local fuckthis = 0
-SWEP.Hook_Think = function(swep)
-    if fuckthis < CurTime() then
-        fuckthis = CurTime() + 1
-        local vm, wm = swep:GetVM(), swep:GetWM()
-        if IsValid(vm) then vm:SetPoseParameter("sniper", 1) end -- different animations for sniper variant
-        if IsValid(wm) then wm:SetPoseParameter("sniper", 1) end -- tpik
-    end
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    ent:SetPoseParameter("sniper", 1) -- different animations for sniper variant
 end
 
 SWEP.Attachments = {_, { Installed = "eft_mosin_stock_std" } } -- hack to get different default stock
