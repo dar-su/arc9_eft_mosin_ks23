@@ -366,6 +366,7 @@ ATT.Sights = {
         OnSwitchToSight = function(self, slottbl)
             if CLIENT then ARC9EFTdrawnumber("3.5x") end
         end,
+        RTScopeMagnification = 3.5,
     },
 }
 
@@ -379,7 +380,7 @@ ATT.RTScopeShadowIntensity = 15
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 400/1080
 
 ARC9.LoadAttachment(ATT, "eft_mosin_scope_pu")
 
