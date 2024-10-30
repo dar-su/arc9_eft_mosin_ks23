@@ -365,6 +365,9 @@ ATT.Hook_PrimaryAttack = function(self)
             local contmult = (shakeradiusM - flashpos:Distance(ply:GetPos()) * 0.0254) / shakeradiusM * 2 -- how close we are
             
             if ply:IsPlayer() then
+                if EFTMED then EFTMED.EffectGive(ply, "EFTMEDConcussion", "EFTMEDHPhead", 11)
+                EFTMED.EffectGive(ply, "EFTMEDStun", "EFTMEDHPhead", contusionLength * contmult) end -- :3 ignore this
+
                 net.Start("arc9eftexplosion")
                 net.WriteFloat(contmult)
                 net.WriteUInt(contusionLength, 9)
