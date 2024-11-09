@@ -759,6 +759,16 @@ ATT.VisualRecoilMult = 0.66
 
 ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220"} -- , "eft_mosin_mount_kochetov" ???
 
+ATT.Attachments = {
+    {
+        PrintName = "Bipod",
+        Category = "eft_harris_bipod",
+        Pos = Vector(0.025, 17.3, 1.0),
+        Ang = Angle(0, -90, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "eft_mosin_stock_ati")
 
 ///////////////////////////////////////      eft_mosin_stock_opfor
