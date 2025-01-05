@@ -57,7 +57,7 @@ SWEP.RPM = 450
 
 SWEP.EFTErgo = 24
 SWEP.BarrelLength = 50
-SWEP.Ammo = "357"
+SWEP.Ammo = "ar2"
 SWEP.Firemodes = { { Mode = 1, PrintName = "Bolt-action" },  }
 
 SWEP.ManualAction = true
