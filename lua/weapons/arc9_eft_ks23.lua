@@ -518,4 +518,13 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
         -- CosmeticOnly = true,
     },
+
+    {
+        PrintName = "Mount",
+        Category = {"eft_ks23_mount"},
+        Bone = "mod_stock",
+        Pos = Vector(0, 3.35, 1.51),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
 }

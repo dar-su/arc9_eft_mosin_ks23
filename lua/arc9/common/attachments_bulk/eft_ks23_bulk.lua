@@ -173,6 +173,47 @@ ATT.MalfunctionMeanShotsToFailMult = 0.95
 ARC9.LoadAttachment(ATT, "eft_ks23_mag_3")
 
 
+///////////////////////////////////////      eft_optic_rusak
+
+
+ATT = {}
+
+ATT.PrintName = "KOMZ Rusak reflex sight"
+ATT.CompactName = "Rusak"
+ATT.Icon = Material("entities/eft_attachments/scopes/rusak.png", "mips smooth")
+ATT.Description = [[A collimator sight manufactured by Kazan Optical-Mechanical Plant in the mid-90s for use on hunting weapons. Installed on the Dovetail type rail, adjustment only possible after full disassembly. Heavy, uncomfortable, foggy sight with horrible parallax - a real product of its time. However, it's still slightly more effective than shooting with iron sights.]]
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_dovetail_komz_rusak.mdl"
+--ATT.Folder = "Reflex"
+
+ATT.Category = {"eft_mp18_mount", "eft_ks23_mount"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(-0.07, 13, -1.72),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 53,
+    }
+}
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/scope_dovetail_komz_rusak_marks.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 450
+ATT.HoloSightColorable = false
+
+ATT.ModelOffset = Vector(1.12, 0, -0.041)
+ATT.ModelAngleOffset = Angle(0, -90, -0)
+
+
+ARC9.LoadAttachment(ATT, "eft_optic_rusak")
 
 
 
