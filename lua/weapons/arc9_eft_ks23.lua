@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ks23")
-SWEP.Description = [[KS-23 is a Russian shotgun, although because it uses a rifled barrel it is officially designated by the Russian military as a carbine. KS stands for Karabin Spetsialniy, "Special Carbine". It is renowned for its large caliber, firing a 23 mm round, equating to 6.27 gauge using the British and American standards of shotgun gauges and approximately 4 gauge using the current European standards (based on the metric CIP tables), making it the largest-bore shotgun in use today.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_ks23") or "KS-23M"
+SWEP.Description = "eft_weapon_ks23_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pumpsg")
+SWEP.Class = "eft_class_weapon_pumpsg"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_sg")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_tula"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "23x75mmR",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"]= "Pump",
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_ru"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1985"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_tula",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_4g",
+    ["eft_trivia_act3"]= "eft_trivia_act_pump",
+    ["eft_trivia_country4"] = "eft_trivia_country_ru",
+    ["eft_trivia_year5"] = "1985"
 }
 
 SWEP.StandardPresets = {

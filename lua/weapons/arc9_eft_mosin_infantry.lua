@@ -5,18 +5,18 @@ SWEP.Spawnable = true
 
 ------------------------- |||           Trivia            ||| -------------------------
 
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mosininf")
-SWEP.Description = [[Mosin–Nagant is one of the most famous russian rifles, which was commonly used by Russian soldiers during WW2. Developed from 1882 to 1891, it was used by the armed forces of the Russian Empire, the Soviet Union and various other nations. It is one of the most mass-produced military bolt-action rifles in history with over 37 million units having been made since 1891. In spite of its age, it has been used in various conflicts around the world up to the present day.]]
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mosininf") or "Mosin (Infantry)"
+SWEP.Description = "eft_weapon_mosininf_desc"
 
-SWEP.Class = ARC9:GetPhrase("eft_class_weapon_boltsnip")
+SWEP.Class = "eft_class_weapon_boltsnip"
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_snip")
 
 SWEP.Trivia = {
-    [ARC9:GetPhrase("eft_trivia_manuf") .. "1"] = ARC9:GetPhrase("eft_trivia_manuf_tula"),
-    [ARC9:GetPhrase("eft_trivia_cal") .. "2"] = "7.62x54mmR",
-    [ARC9:GetPhrase("eft_trivia_act") .. "3"] = ARC9:GetPhrase("eft_trivia_act_bolt"),
-    [ARC9:GetPhrase("eft_trivia_country") .. "4"] = ARC9:GetPhrase("eft_trivia_country_ussr"),
-    [ARC9:GetPhrase("eft_trivia_year") .. "5"] = "1891"
+    ["eft_trivia_manuf1"] = "eft_trivia_manuf_tula",
+    ["eft_trivia_cal2"] = "eft_trivia_calibr_762x54",
+    ["eft_trivia_act3"] = "eft_trivia_act_bolt",
+    ["eft_trivia_country4"] = "eft_trivia_country_ussr",
+    ["eft_trivia_year5"] = "1891"
 }
 SWEP.StandardPresets = {
     "[Carbine]XQAAAQA4AQAAAAAAAAA9iIIiM7tuo1AtT00OeFD3X0jGsS0T11y2KMRblzYFXEszjMd8OVdb95IsLmfJNaUP3RPgKO7FM2xm67hCGXyqGxOJGru8GItwhNuQvdWGFHQUIFJNgYtKTuPbG26Eatt+fggc/2i61p10UF4P89scufrcEHwOQFACx8qEqvUYQhiz2vIAspNyC0lIvAk2J18o0sAA",
